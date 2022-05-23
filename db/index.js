@@ -6,7 +6,7 @@ const connectToDB = async () => {
     try{
         connect(
             // eslint-disable-next-line no-undef
-            `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`
+            process.env.MONGODB_URI || `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`
           );
     }
     catch(e){
