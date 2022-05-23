@@ -21,6 +21,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, async () => {
-  const qaq = await DBNode.find();
   console.log(`Server running on port ${PORT}`);
 });
