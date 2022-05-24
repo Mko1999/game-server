@@ -17,7 +17,7 @@ app.use(express.urlencoded());
 app.use('/graph', graphRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello world');
+  res.send('Hello ');
 });
 
 app.listen(PORT, async () => {
